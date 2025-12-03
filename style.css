@@ -1,0 +1,103 @@
+/* ----- ESTILO GERAL ----- */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #1b5e20;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----- TÍTULO ----- */
+h1 {
+  font-size: 2em;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+/* ----- CONTAINER PRINCIPAL ----- */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ----- CARDS ----- */
+.card {
+  background-color: #f1f8e9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ----- TEXTO DOS CARDS ----- */
+.title {
+  font-size: 1.1em;
+  color: #33691e;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.unit {
+  font-size: 0.6em;
+  color: #558b2f;
+}
+
+/* ----- RODAPÉ ----- */
+footer {
+  margin-top: auto;
+  padding: 10px 0;
+  background-color: #e8f5e9;
+  color: #33691e;
+  border-top: 2px solid #a5d6a7;
+  font-size: 0.95em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 40px;
+}
+
+
+a {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 35px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s;
+  font-size: 1.1em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+a:hover {
+  background-color: #1b5e20;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}

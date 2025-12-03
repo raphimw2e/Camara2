@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos do Monitoramento</title>
+  <link rel="stylesheet" href="graficos.css">
+
+  <!-- Importando Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <h1>📊 Gráficos de Monitoramento</h1>
+
+  <div class="container">
+    <div class="card"><canvas id="graficoTemp"></canvas></div>
+    <div class="card"><canvas id="graficoUmid"></canvas></div>
+    <div class="card"><canvas id="graficoLuz"></canvas></div>
+    <div class="card"><canvas id="graficoAr"></canvas></div>
+  </div>
+  <a href="../index.html">Informações dos sensores</a>
+  <footer>
+    <span>📈 Dados processados por hora - Ubidots</span>
+  </footer>
+
+  <script src="graficos.js"></script>
+</body>
+</html>
